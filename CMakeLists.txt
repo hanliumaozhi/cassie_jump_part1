@@ -50,6 +50,6 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(cassie_jump_part1 main.cpp)
+add_executable(cassie_jump_part1 main.cpp OptNode.cpp OptNode.h Jumping.cpp Jumping.h)
 
 target_link_libraries(cassie_jump_part1 drake::drake ${GFLAGS_LIBRARIES})
