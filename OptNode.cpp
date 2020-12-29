@@ -56,7 +56,6 @@ void OptNode::build()
 void OptNode::print_var(const drake::solvers::MathematicalProgramResult& result)
 {
     *var_sol_ = result.GetSolution(decision_var_ptr_);
-    std::cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<std::endl;
-    std::cout<<(*var_sol_)(0)<<std::endl;
+    std::cout<<(*var_sol_)(3)<<", ";
 
 }

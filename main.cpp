@@ -10,7 +10,7 @@ int main() {
     auto ss = drake::solvers::SnoptSolver();
 
     jumping.program_->SetSolverOption(drake::solvers::SnoptSolver::id(), "Print file",
-                                  "../mpc_snopt.out");
+                                  "mpc_snopt.out");
     //mpc.program_->SetSolverOption(drake::solvers::SnoptSolver::id(), "Scale option",
     //                              1);
     //auto ii = drake::solvers::IpoptSolver();
